@@ -8,8 +8,10 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
 add_executable(pr01_read pr01_read.cpp)
-
 TARGET_LINK_LIBRARIES(pr01_read ${OpenCV_LIBS} )
+
+add_executable(pr02_crop pr02_crop.cpp)
+TARGET_LINK_LIBRARIES(pr02_crop ${OpenCV_LIBS} )
 
 install(TARGETS pr01_read RUNTIME DESTINATION bin)
 
