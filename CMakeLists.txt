@@ -13,5 +13,13 @@ TARGET_LINK_LIBRARIES(pr01_read ${OpenCV_LIBS} )
 add_executable(pr02_crop pr02_crop.cpp)
 TARGET_LINK_LIBRARIES(pr02_crop ${OpenCV_LIBS} )
 
-install(TARGETS pr01_read RUNTIME DESTINATION bin)
+add_executable(pr03_sum pr03_sum.cpp)
+TARGET_LINK_LIBRARIES(pr03_sum ${OpenCV_LIBS} )
 
+add_executable(pr04_wsum pr04_wsum.cpp)
+TARGET_LINK_LIBRARIES(pr04_wsum ${OpenCV_LIBS} )
+
+add_executable(pr05_histogram pr05_histogram.cpp)
+TARGET_LINK_LIBRARIES(pr05_histogram ${OpenCV_LIBS} )
+
+install(TARGETS pr01_read RUNTIME DESTINATION bin)
