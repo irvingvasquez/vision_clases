@@ -22,4 +22,7 @@ TARGET_LINK_LIBRARIES(pr04_wsum ${OpenCV_LIBS} )
 add_executable(pr05_histogram pr05_histogram.cpp)
 TARGET_LINK_LIBRARIES(pr05_histogram ${OpenCV_LIBS} )
 
+add_executable(pr06_linear_filtering pr06_linear_filtering.cpp)
+TARGET_LINK_LIBRARIES(pr06_linear_filtering ${OpenCV_LIBS} )
+
 install(TARGETS pr01_read RUNTIME DESTINATION bin)
