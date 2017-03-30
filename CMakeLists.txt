@@ -25,4 +25,16 @@ TARGET_LINK_LIBRARIES(pr05_histogram ${OpenCV_LIBS} )
 add_executable(pr06_linear_filtering pr06_linear_filtering.cpp)
 TARGET_LINK_LIBRARIES(pr06_linear_filtering ${OpenCV_LIBS} )
 
+add_executable(pr07_sobel pr07_sobel.cpp)
+TARGET_LINK_LIBRARIES(pr07_sobel ${OpenCV_LIBS})
+
+add_executable(pr08_canny pr08_canny.cpp)
+TARGET_LINK_LIBRARIES(pr08_canny ${OpenCV_LIBS})
+
+add_executable(pr09_thresholding pr09_thresholding.cpp)
+TARGET_LINK_LIBRARIES(pr09_thresholding ${OpenCV_LIBS})
+
+add_executable(pr10_harris pr10_harris.cpp)
+TARGET_LINK_LIBRARIES(pr10_harris ${OpenCV_LIBS})
+
 install(TARGETS pr01_read RUNTIME DESTINATION bin)
