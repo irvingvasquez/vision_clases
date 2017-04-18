@@ -37,4 +37,7 @@ TARGET_LINK_LIBRARIES(pr09_thresholding ${OpenCV_LIBS})
 add_executable(pr10_harris pr10_harris.cpp)
 TARGET_LINK_LIBRARIES(pr10_harris ${OpenCV_LIBS})
 
+add_executable(pr11_orb pr11_orb.cpp)
+TARGET_LINK_LIBRARIES(pr11_orb ${OpenCV_LIBS})
+
 install(TARGETS pr01_read RUNTIME DESTINATION bin)
