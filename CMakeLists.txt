@@ -7,6 +7,9 @@ MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
+#Activar si se tienen instaladas las librerias extra
+set(NONFREE false)
+
 add_executable(pr01_read pr01_read.cpp)
 TARGET_LINK_LIBRARIES(pr01_read ${OpenCV_LIBS} )
 
@@ -39,5 +42,10 @@ TARGET_LINK_LIBRARIES(pr10_harris ${OpenCV_LIBS})
 
 add_executable(pr11_orb pr11_orb.cpp)
 TARGET_LINK_LIBRARIES(pr11_orb ${OpenCV_LIBS})
+
+if(NONFREE)
+  add_executable(nonfree_01_surf nonfree_01_surf.cpp)
+  target_link_libraries(nonfree_01_surf ${OpenCV_LIBS})
+endif()
 
 install(TARGETS pr01_read RUNTIME DESTINATION bin)
